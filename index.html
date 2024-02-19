@@ -55,6 +55,14 @@
     function toggleMenu(){
         subMenu.classList.toggle("open-menu");
     }
+
+    let userPic = document.querySelector(".user-pic");
+
+    window.addEventListener("click", (e) =>{
+        if(!userPic.contains(e.target)){
+            subMenu.classList.remove("open-menu");
+        }
+    });
  </script>
 
 </body>
